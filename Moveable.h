@@ -16,15 +16,26 @@ public:
  
     void update(float dt);
     void updateGum(float dt);
+<<<<<<< HEAD
+=======
+	void updateBlood(float dt);
+>>>>>>> origin/zhou
 
 	void eraseMoveable();
 	void moveMoveable(cocos2d::Vec2 destination);
 
 	bool canattack(Moveable* target);
+<<<<<<< HEAD
 	
 
 	void isattacked(Moveable* target);
 	
+=======
+	/*建筑物的待重载*/
+
+	void isattacked(Moveable* target);
+	/*建筑物的待重载*/
+>>>>>>> origin/zhou
 
 	float getMoveSpeed();
 	void setMoveSpeed(float speed);

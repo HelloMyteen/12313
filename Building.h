@@ -25,8 +25,11 @@ public:
 
 	void _isattacked(Moveable* target);
 
+<<<<<<< HEAD
 	bool _canattack(Moveable* target);
 
+=======
+>>>>>>> origin/zhou
 	void boomlisten();
 	
 private:

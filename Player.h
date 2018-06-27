@@ -28,6 +28,10 @@ public:
     void setHost(bool b);
     void setDead(bool b);
     void setMoney(int m);
+<<<<<<< HEAD
+=======
+	void setPower(int m);
+>>>>>>> origin/zhou
     void setIsCarFactory(bool b);
     void setIsSoldierFactory(bool b);
 	void setIsBase(bool k);
@@ -41,8 +45,13 @@ private:
     bool isHost;
 	bool ready = false;     //是否准备
     bool isDead;
+<<<<<<< HEAD
     int money;
     int power;
+=======
+	int money = 2000;
+	int power = 0;
+>>>>>>> origin/zhou
     bool isCarFactory=false;
     bool isSoldierFactory=false;
 	bool isBase = true;

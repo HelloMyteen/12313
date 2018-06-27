@@ -39,12 +39,21 @@ bool MyWorld::init()
 	auto background1 = NinePatch1::createPatch(size.width,size.height,0,Vec2(0,0));
     addChild(background1);
 //    
+<<<<<<< HEAD
     auto pSingle = MenuItemImage::create("SinglePlayer.png", "SinglePlayer.png", this, menu_selector(MyWorld::ButtonToSinglePlayerMapSelect));
     auto Single = Menu::create(pSingle,  NULL);
     Single->setAnchorPoint(Vec2(0,0));
     Single->setPosition(size.width/2, size.height/2+80);
     Single->setScale(0.6f);
     this->addChild(Single);
+=======
+    //auto pSingle = MenuItemImage::create("SinglePlayer.png", "SinglePlayer.png", this, menu_selector(MyWorld::ButtonToSinglePlayerMapSelect));
+    //auto Single = Menu::create(pSingle,  NULL);
+    //Single->setAnchorPoint(Vec2(0,0));
+    //Single->setPosition(size.width/2, size.height/2+80);
+    //Single->setScale(0.6f);
+    //this->addChild(Single);
+>>>>>>> origin/zhou
     
      auto pMuti = MenuItemImage::create("MutiPlayer.png", "MutiPlayer.png", this, menu_selector(MyWorld::menuButton012));
     auto Muti = Menu::create(pMuti,  NULL);
@@ -71,10 +80,17 @@ bool MyWorld::init()
 
     return true;
 }
+<<<<<<< HEAD
 void MyWorld::ButtonToSinglePlayerMapSelect(Ref* pSender)
 {
     Director::sharedDirector()->replaceScene(TransitionFade::create(3.0f, SinglePlayerMapSelect::createScene()));
 }
+=======
+//void MyWorld::ButtonToSinglePlayerMapSelect(Ref* pSender)
+//{
+//    Director::sharedDirector()->replaceScene(TransitionFade::create(3.0f, SinglePlayerMapSelect::createScene()));
+//}
+>>>>>>> origin/zhou
 void MyWorld::Return(Ref* pSender)
 {
     Director::sharedDirector()->replaceScene(TransitionFade::create(3.0f, HelloWorld::createScene()));

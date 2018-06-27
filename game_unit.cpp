@@ -1,4 +1,8 @@
 #include "game_unit.h"
+<<<<<<< HEAD
+=======
+#include "cocos2d.h"
+>>>>>>> origin/zhou
 
 GameUnit * GameUnit::create(const std::string & filename)
 {
@@ -39,12 +43,20 @@ std::string GameUnit::getName()
 	return unit_name;
 }
 
+<<<<<<< HEAD
 int GameUnit::getHealth()
+=======
+float GameUnit::getHealth()
+>>>>>>> origin/zhou
 {
 	return health;
 }
 
+<<<<<<< HEAD
 int GameUnit::getMaxHealth()
+=======
+float GameUnit::getMaxHealth()
+>>>>>>> origin/zhou
 {
 	return max_health;
 }
@@ -103,12 +115,20 @@ void GameUnit::setType(int t)
 //	position = pos;
 //}
 
+<<<<<<< HEAD
 void GameUnit::setHealth(int h)
+=======
+void GameUnit::setHealth(float h)
+>>>>>>> origin/zhou
 {
 	health = h;
 }
 
+<<<<<<< HEAD
 void GameUnit::setMaxHealth(int mh)
+=======
+void GameUnit::setMaxHealth(float mh)
+>>>>>>> origin/zhou
 {
 	max_health = mh;
 }
@@ -157,3 +177,24 @@ void GameUnit::setIsMove(bool is)
 {
 	isMove = is;
 }
+<<<<<<< HEAD
+=======
+
+cocos2d::Sprite * GameUnit::getblood()
+{
+	return blood;
+}
+cocos2d::Sprite * GameUnit::getbar()
+{
+	return bar;
+}
+
+void GameUnit::setblood(Sprite * _blood)
+{
+	blood = _blood;
+}
+void GameUnit::setbar(Sprite * _bar)
+{
+	bar = _bar;
+}
+>>>>>>> origin/zhou

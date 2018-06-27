@@ -34,6 +34,10 @@ BuildingBase* BuildingBase::createWithSpriteFrameName(const std::string & filena
 void BuildingBase::isattacked_(Moveable* target)
 {
 	this->setHealth(this->getHealth() - target->getAttack() - this->getDefend());
+<<<<<<< HEAD
+=======
+	this->getblood()->setScaleX(this->getHealth() / this->getMaxHealth());
+>>>>>>> origin/zhou
 	if (getHealth() <= 0)
 	{
 		EraseBase();
@@ -136,11 +140,19 @@ void BuildingBase::initBase(int type)
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(baselistener, this);
 
 	this->setType(type);
+<<<<<<< HEAD
 	if (type == Base_TYPE)
 	{
 		setHealth(Base_HEALTH);
 		setMaxHealth(Base_MAXHEALTH);
 		setDefend(Base_DEFEND);
+=======
+	if (type == BUIDBASE_TYPE)
+	{
+		setHealth(BUIDBASE_HEALTH);
+		setMaxHealth(BUIDBASE_MAXHEALTH);
+		setDefend(BUIDBASE_DEFEND);
+>>>>>>> origin/zhou
 		setIsMove(false);
 		auto frame = cocos2d::SpriteFrame::create("base.png", cocos2d::Rect(0, 0, 99, 99));
 		this->setDisplayFrame(frame);

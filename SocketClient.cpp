@@ -66,13 +66,20 @@ bool SocketClient::connectServer(const char* serverIP, unsigned short port) //连
 
 void SocketClient::recvMessage()
 {
+<<<<<<< HEAD
 	char recvBuf[1024] = { 0 };
+=======
+	char recvBuf[1024] = {0};
+>>>>>>> origin/zhou
 	int amount = 0;
 	while (true)    //接收消息
 	{
 		amount = recv(_socektClient, recvBuf, sizeof(recvBuf), 0);
+<<<<<<< HEAD
 		log("%d", sizeof(recvBuf));
 		log("%d", amount);
+=======
+>>>>>>> origin/zhou
 		if (amount < 0)
 		{
 			log("recv error");
@@ -80,7 +87,12 @@ void SocketClient::recvMessage()
 		}
 		if (amount > 0 && onRecv != nullptr)
 		{
+<<<<<<< HEAD
 			char* suibian = new char[amount];
+=======
+
+			char *suibian = new char[amount];
+>>>>>>> origin/zhou
 			memcpy(suibian, recvBuf, amount);
 			onRecv(suibian, amount);
 			delete[]suibian;
@@ -106,5 +118,9 @@ void SocketClient::sendMessage(const char* data, int length)    //发送消息，字符
 		{
 			log("send error!");
 		}
+<<<<<<< HEAD
+=======
+		log("%d", result);
+>>>>>>> origin/zhou
 	}
 }

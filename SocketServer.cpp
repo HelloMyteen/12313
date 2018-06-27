@@ -172,6 +172,10 @@ void SocketServer::sendMessage(HSocket socket, const char* data, int count)
 			{
 				log("send error!");
 			}
+<<<<<<< HEAD
+=======
+			log("ret:%d,count:%d", ret, count);
+>>>>>>> origin/zhou
 			break;
 		}
 	}
@@ -187,6 +191,10 @@ void SocketServer::sendMessage(const char* data, int count)
 		{
 			log("send error!");
 		}
+<<<<<<< HEAD
 
+=======
+		log("rret:%d", ret);
+>>>>>>> origin/zhou
 	}
 }

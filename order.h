@@ -42,6 +42,11 @@ public:
 
 	//³¢ÊÔ
 	std::list<introduct>_orderlist;
+<<<<<<< HEAD
+=======
+	//µØÍ¼Ñ¡Ôñ
+	int mapindex = 0;
+>>>>>>> origin/zhou
 
 private:
 	std::string operatename;

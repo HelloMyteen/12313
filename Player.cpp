@@ -85,3 +85,10 @@ bool Player::getIsBase()
 {
 	return isBase;
 }
+<<<<<<< HEAD
+=======
+void Player::setPower(int m)
+{
+	power = m;
+}
+>>>>>>> origin/zhou
